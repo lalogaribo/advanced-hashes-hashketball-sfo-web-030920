@@ -114,7 +114,7 @@ end
 
 def num_points_scored(player_name)
   game_hash.each do |location, team|
-   player[:player_name] if team[:players].include?(player_name)
+   return player[:player_name] if team[:players].include?(player_name)
   end
   return nil
 end
